@@ -28,7 +28,7 @@ for page in main_pages:
 st.sidebar.markdown("***")
 st.sidebar.write("")    
 
-st.sidebar.markdown("[Join Discord](https://discord.gg/VZy9xPhaW2) | [See Code](https://github.com/peter942/applicator_ai)")
+st.sidebar.markdown("[Visit Test App](https://peter942-applicator-ai-applicator-hcb851.streamlit.app/) | [Join Discord](https://discord.gg/VZy9xPhaW2) | [See Code](https://github.com/peter942/applicator_ai)")
 
 
 
@@ -37,12 +37,12 @@ if st.session_state['page'] == 'home':
   header1, header2 = st.columns(2)
   with header1:
     st.header("An open-source tool for creating, optimising, and monitoring ChatGPT API Prompts")
-    st.write("We believe that combining dozens or hundreds of prompts will be the key to achieving extraordinary things with AI - but to do this, getting individual prompts performing reliably is key.")
+    st.write("We believe that combining dozens or hundreds of prompts will be the key to achieving extraordinary things with AI - but to do this, getting individual prompts performing consistently is key.")
     st.write("Applicator is designed by builders for builders - to help developers rapidly build test, monitor and implement ChatGPT API queries.")
     if st.button("Get Started", key="get_started_1"):
       st.session_state['page'] = 'get started'
       st.experimental_rerun()
-    st.markdown("[Join Discord](https://discord.gg/VZy9xPhaW2)")
+    st.markdown("[Visit Test App](https://peter942-applicator-ai-applicator-hcb851.streamlit.app/) | [Join Discord](https://discord.gg/VZy9xPhaW2)")
   with header2:
     st.image("https://i.ibb.co/bzt5BZ2/3568060768-A-puppeteer-sitting-above-a-stage-holding-up-hundreds-of-puppets-red-curtain-strings-ever.png",use_column_width='always')
 
@@ -53,9 +53,9 @@ elif st.session_state['page'] == "get started":
     st.markdown("## Get started with version 0.05:")
     st.warning("Note: Currently, Applicator runs locally so you'll need to download the code, install the dependencies and run it locally. In this state, I don't think it'll be usable for most people but I'm sharing a guide just in case. If you struggle at any stage, I'd suggest you ask ChatGPT :)")
     st.markdown("### 1) Test it out")
-    st.markdown("The live version won't run queries, or save files, but you can test it out here [here](https://peter942-applicator-ai-applicator-hcb851.streamlit.app/)")
+    st.markdown("The live version won't run queries, or save files, but you can test it out here [here](https://peter942-applicator-ai-applicator-hcb851.streamlit.app/).")
     st.markdown("### 2) Download the code")
-    st.markdown("You can download the code from [here](https://github.com/peter942/applicator_ai)")
+    st.markdown("You can download the code from [here](https://github.com/peter942/applicator_ai).")
     st.markdown("### 3) Install the dependencies")
     st.markdown("You'll need to install the dependencies listed in the requirements.txt file. You can do this by running the following command in the terminal:")
     st.markdown("```pip install -r requirements.txt```")
