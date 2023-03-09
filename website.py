@@ -51,7 +51,7 @@ if st.session_state['page'] == 'home':
 
 elif st.session_state['page'] == "get started":
     st.markdown("## Get started with version 0.05:")
-    st.warning("Note: Currently, Applicator runs locally so you'll need to download the code, install the dependencies and run it locally. In this state, I don't think it'll be usable for most people but I'm sharing a guide just in case. If you struggle at any stage, I'd suggest you ask ChatGPT first or message in the Discord.")
+    st.warning("Note: Currently, Applicator runs locally so you'll need to download the code, install the dependencies and run it locally. In this state, I don't think it'll be usable for most people but I'm sharing a guide just in case. If you struggle at any stage, I'd suggest you ask ChatGPT :)")
     st.markdown("### 1) Test it out")
     st.markdown("The live version won't run queries, or save files, but you can test it out here [here](https://peter942-applicator-ai-applicator-hcb851.streamlit.app/)")
     st.markdown("### 2) Download the code")
@@ -71,8 +71,4 @@ elif st.session_state['page'] == "get started":
     st.markdown("When you save a prompt, the JSON will pop up - this is a hamhanded way to ensure that your prompt matches what's in the code.  You can copy and paste this into the code like for Python:")
     st.code("input_prompt = **PASTE IN PROMPT JSON HERE** \n\ninput_prompt.append({'role': 'user', 'content': '{}'.format(prompt)}")
     st.markdown("This will be done in a nicer way in the future!")
-    
-    
-    
-    
     
